@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'users#login_form'
+  root 'users#new'
 
   post "goodfeelings/:record_id/create" => "goodfeelings#create"
   post "goodfeelings/:record_id/destroy" => "goodfeelings#destroy"
