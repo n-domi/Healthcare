@@ -1,0 +1,57 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.users-edit {
+  height: calc(100vh - 150px);
+  width: 100vw;
+}
+
+.users-form-container {
+  width: 50%;
+  margin: auto;
+}
+
+.users-form-heading {
+  margin: auto;
+  text-align: center;
+  width: 220px;
+  color: white;
+  font-size: 25px;
+  font-family: 'arial';
+  text-shadow: 1px 2px 3px black; 
+  padding-top: 25px;
+}
+
+.users-form {
+  margin: auto;
+  text-align: center;
+  width: 220px;
+}
+
+.users-form-body {
+  margin: auto;
+}
+
+input[name="name"],input[name="email"],input[name="password"] {
+  width: 220px;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form-guide {
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 2px 3px black; 
+  padding-top: 20px;
+  font-family: 'arial';
+}
+
+input[value="保存"] {
+  margin-top: 25px;
+}
+
+.session {
+  padding-left: 130px;
+}

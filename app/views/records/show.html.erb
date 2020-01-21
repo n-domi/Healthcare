@@ -1,0 +1,41 @@
+<div class="main posts-show">
+  <div class="show-container">
+    <div class="posts-show-item">
+      <div class="post-user-name"> 
+        <%= link_to(@user.name, "/users/#{@user.id}") %>
+      </div>
+      <p class="record-content">
+        <%= @record.content %>
+      </p>
+      <div class="post-time">
+        <%= @record.created_at.strftime('%Y/%m/%d') %>
+      </div>
+      <% if Goodfeeling.find_by(user_id: @current_user.id, record_id: @record.id) %>
+        <%= link_to("/goodfeelings/#{@record.id}/destroy", {method: "post"}) do %>
+          <span class="far fa-laugh-beam like-btn-unlike1">feelgood!</span>
+        <% end %>
+      <% else %>
+        <%= link_to("/goodfeelings/#{@record.id}/create", {method: "post"}) do %>
+          <span class="far fa-thumbs-up like-btn">feelgood?</span>
+        <% end %>
+      <% end %>
+
+      <% if Badfeeling.find_by(user_id: @current_user.id, record_id: @record.id) %>
+        <%= link_to("/badfeelings/#{@record.id}/destroy", {method: "post"}) do %>
+          <span class="far fa-tired like-btn-unlike2">feelbad!</span>
+        <% end %>
+      <% else %>
+        <%= link_to("/badfeelings/#{@record.id}/create", {method: "post"}) do %>
+          <span class="far fa-thumbs-down like-btn">feelbad?</span>
+        <% end %>
+      <% end %>
+
+      <% if @record.user_id == @current_user.id %>
+        <div class="post-menus">
+          <%= link_to("編集", "/records/#{@record.id}/edit") %>
+          <%= link_to("削除", "/records/#{@record.id}/destroy", {method: "post"}) %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

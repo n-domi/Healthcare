@@ -1,0 +1,31 @@
+<div class="main posts-show">
+  <div class="container">
+    <div class="posts-show-item">
+      <div class="post-user-name">
+        <%= link_to(@user.name, "/users/#{@user.id}") %>
+      </div>
+      <p>
+        <%= @record.content %>
+      </p>
+      <div class="post-time">
+        <%= @record.created_at %>
+      </div>
+      <% if Goodfeeling.find_by(user_id: @current_user.id, record_id: @record.id) %>
+        <%= link_to("/likes/#{@record.id}/destroy", {method: "post"}) do %>
+          <span class="fa fa-heart like-btn-unlike"></span>
+        <% end %>
+      <% else %>
+        <%= link_to("/likes/#{@record.id}/create", {method: "post"}) do %>
+          <span class="fa fa-heart like-btn"></span>
+        <% end %>
+      <% end %>
+      <%= @goodfeelings_count %>
+      <% if @post.user_id == @current_user.id %>
+        <div class="post-menus">
+          <%= link_to("編集", "/records/#{@record.id}/edit") %>
+          <%= link_to("削除", "/records/#{@record.id}/destroy", {method: "post"}) %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

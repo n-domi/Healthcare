@@ -1,0 +1,16 @@
+<div class="main users-edit">
+  <div class="container">
+    <div class="users-form-heading">アカウント編集</div>
+    <div class="form users-form">
+      <div class="users-form-body">
+        <%= form_tag("/users/#{@user.id}/update") do %>
+          <p class="form-guide">ユーザー名</p>
+          <input name="name" value="<%= @user.name %>">
+          <p class="form-guide">メールアドレス</p>
+          <input name="email" value="<%= @user.email %>">
+          <input type="submit" value="保存">
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

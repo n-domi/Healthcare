@@ -1,0 +1,13 @@
+<div class="main posts-new">
+  <div class="container">
+    <h1 class="form-heading">食事内容をお答えください。</h1>
+    <%= form_tag("/records/create") do %>
+      <div class="form">
+        <div class="form-body">
+          <textarea  type="text" name="content"><%= @record.content %>食事内容：</textarea>
+          <input type="submit" value="記録する" class="submit-btn">
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
