@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
+<<<<<<< Updated upstream
   root 'users#new'
+=======
+  root 'users#login'
+>>>>>>> Stashed changes
 
   post "goodfeelings/:record_id/create" => "goodfeelings#create"
   post "goodfeelings/:record_id/destroy" => "goodfeelings#destroy"

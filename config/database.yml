@@ -53,9 +53,19 @@ production:
   username: Healthcare
   password: <%= ENV['HEALTHCARE_DATABASE_PASSWORD'] %>
 
+<<<<<<< Updated upstream
   production:
 #半角スペース２個分の空白を開ける
   <<: *default
   adapter: postgresql
   encoding: unicode
   pool: 5
+=======
+  
+>>>>>>> Stashed changes
+
+development:
+  adapter: postgresql
+  host: localhost
+  username: user
+  database: app-dev
