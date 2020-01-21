@@ -52,6 +52,10 @@ production:
   database: Healthcare_production
   username: Healthcare
   password: <%= ENV['HEALTHCARE_DATABASE_PASSWORD'] %>
+
+  production:
+#半角スペース２個分の空白を開ける
+  <<: *default
   adapter: postgresql
   encoding: unicode
   pool: 5
