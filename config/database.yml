@@ -52,3 +52,6 @@ production:
   database: Healthcare_production
   username: Healthcare
   password: <%= ENV['HEALTHCARE_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  root 'records#index'
+
   post "goodfeelings/:record_id/create" => "goodfeelings#create"
   post "goodfeelings/:record_id/destroy" => "goodfeelings#destroy"
 
@@ -10,6 +12,7 @@ Rails.application.routes.draw do
   get "users/:id/edit" => "users#edit"
   post "users/create" => "users#create"
   get "signup" => "users#new"
+  # get "users/index" => "users#index"
   get "users/:id" => "users#show"
   post "login" => "users#login"
   post "logout" => "users#logout"
