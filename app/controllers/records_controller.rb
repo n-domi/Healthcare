@@ -1,6 +1,6 @@
 class RecordsController < ApplicationController
   def index
-    @records = Record.where(user_id: @current_user.id).order(created_at: :desc)
+    @records = Record.where(user_id: @current_user.id).order(created_at: :desc).page(params[:page]).per(5)
     @record = Record.find_by(user_id: @current_user.id)
   end
   
