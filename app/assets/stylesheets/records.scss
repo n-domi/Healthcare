@@ -4,7 +4,7 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-image: url("https://cdn.pixabay.com/photo/2013/08/28/11/47/green-leaf-176722__480.jpg");
+  background-image: url("https://cdn.pixabay.com/photo/2014/05/19/20/37/rush-348481_1280.jpg");
   background-size: 100vw 100vh;
 }
 
@@ -16,7 +16,7 @@ body {
 .header-logo {
   height: 100px;
   width: 100%;  
-  background-image: url("https://d1f5hsy4d47upe.cloudfront.net/54/5411cdbca6da4c7851604494b227b867_t.jpeg");
+  background-image: url("https://cdn.pixabay.com/photo/2010/12/13/10/09/abstract-2384__480.jpg");
   background-size: 100% 100%;
 }
 
@@ -66,7 +66,7 @@ body {
   height: 50px;
   width: 100%;
   font-family:'Tahoma';
-  background-color: #faedd4;
+  background-color: rgba(250, 237, 212, 0.9);
 }
 
 .menus-clearfix {
@@ -217,6 +217,19 @@ input[type="submit"]:hover{
   margin: 100px auto;
 }
 
-.show-container {
-
+.first {
+  color: white;
 }
+
+.pagination {
+  margin: 0 400px;
+  background-color: rgba(0, 255, 0, 0.5);
+  margin-top: 20px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 22px;
+  font-family: fantasy;
+  text-align: center;
+  letter-spacing: 5px;
+}  
+
