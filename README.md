@@ -15,6 +15,8 @@ Healthcare
 
 自分の食事を記録し、それに対し feelgood!ボタン または feelbad!ボタン を押していただき、自分に合った食事をデータから分析することができます
 
+実装済みの機能↓
+
 ユーザー機能（新規登録、ログイン、ログアウト、編集） 
 
 食事の記録（新規作成、一覧・詳細表示、編集、削除） 
@@ -86,7 +88,7 @@ https://github.com/n-domi
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|   #ユーザーのid
-|record_id|bigint|null: false, foreign_key: true|  #記録のid
+|record_id|integer|null: false, foreign_key: true|  #記録のid
 
 ### Association
 - belongs_to :user
@@ -96,7 +98,7 @@ https://github.com/n-domi
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|   #ユーザーのid
-|record_id|bigint|null: false, foreign_key: true|  #記録のid
+|record_id|integer|null: false, foreign_key: true|  #記録のid
 
 ### Association
 - belongs_to :user
