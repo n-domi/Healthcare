@@ -31,7 +31,7 @@ Healthcare
 
 # Demo
 
-[d43beafd026d426b0f51f5e83a10df7a.mp4.zip](https://github.com/n-domi/Healthcare/files/4296351/d43beafd026d426b0f51f5e83a10df7a.mp4.zip)
+![d43beafd026d426b0f51f5e83a10df7a](https://user-images.githubusercontent.com/59164751/76049110-63669380-5fa9-11ea-9c72-b2c408aa1947.gif)
 
 テストアカウント=>email:1@1,password:11111111
 
