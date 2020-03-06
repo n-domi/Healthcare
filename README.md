@@ -1,4 +1,5 @@
-![Uploading 5543452c7a82d7b5cacf46224d8cf4f0.jpg…]()
+![5543452c7a82d7b5cacf46224d8cf4f0](https://user-images.githubusercontent.com/59164751/76047940-a1fb4e80-5fa7-11ea-8bed-99e7399fdaca.jpg)
+
 
 Link→  https://rocky-depths-03246.herokuapp.com/
 
@@ -25,7 +26,7 @@ Healthcare
 
 # Demo
 
-[Uploading d43beafd026d426b0f51f5e83a10df7a.mp4.zip…]()
+[d43beafd026d426b0f51f5e83a10df7a.mp4.zip](https://github.com/n-domi/Healthcare/files/4296326/d43beafd026d426b0f51f5e83a10df7a.mp4.zip)
 
 テストアカウント=>email:1@1,password:11111111
 
@@ -35,13 +36,9 @@ Ruby on Rails(version 2.5.1),HTML,CSS
 
 mysql2 0.5.3(開発環境)、postgresql(本番環境)
 
-# Requirement
-
 # Usage
 
 まずはユーザー登録をしていただき、自分の食事内容とその日の調子を記録してください。
-
-# Licence
 
 # Author
 
