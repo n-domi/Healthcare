@@ -1,222 +1,222 @@
 // Place all the styles related to the records controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body {
-  height: 100vh;
-  width: 100vw;
-  background-image: url("https://cdn.pixabay.com/photo/2013/08/28/11/47/green-leaf-176722__480.jpg");
-  background-size: 100vw 100vh;
-}
+// body {
+//   height: 100vh;
+//   width: 100vw;
+//   background-image: url("https://cdn.pixabay.com/photo/2013/08/28/11/47/green-leaf-176722__480.jpg");
+//   background-size: 100vw 100vh;
+// }
 
-.header {
-  height: 150px;
-  width: 100vw;
-}
+// .header {
+//   height: 150px;
+//   width: 100vw;
+// }
 
-.header-logo {
-  height: 100px;
-  width: 100%;  
-  background-image: url("https://d1f5hsy4d47upe.cloudfront.net/54/5411cdbca6da4c7851604494b227b867_t.jpeg");
-  background-size: 100% 100%;
-}
+// .header-logo {
+//   height: 100px;
+//   width: 100%;  
+//   background-image: url("https://d1f5hsy4d47upe.cloudfront.net/54/5411cdbca6da4c7851604494b227b867_t.jpeg");
+//   background-size: 100% 100%;
+// }
 
-.title {
-  color: white;
-  font-size: 40px;
-  padding-left: 60px;
-  padding-top: 20px;
-  font-family: 'Haettenschweiler';
-  text-shadow: 1px 2px 3px black; 
-  animation-duration: 4.5s;
-  animation-name: anime1;
-}
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%; 
-  }
+// .title {
+//   color: white;
+//   font-size: 40px;
+//   padding-left: 60px;
+//   padding-top: 20px;
+//   font-family: 'Haettenschweiler';
+//   text-shadow: 1px 2px 3px black; 
+//   animation-duration: 4.5s;
+//   animation-name: anime1;
+// }
+// @keyframes slidein {
+//   from {
+//     margin-left: 100%;
+//     width: 300%; 
+//   }
 
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
+//   to {
+//     margin-left: 0%;
+//     width: 100%;
+//   }
+// }
 
-.subtitle {
-  color: white;
-  font-size: 20px;
-  padding-left: 140px;
-  text-shadow: 1px 2px 3px black;
-  animation-duration: 2s;
-  animation-name: slidein; 
-}
+// .subtitle {
+//   color: white;
+//   font-size: 20px;
+//   padding-left: 140px;
+//   text-shadow: 1px 2px 3px black;
+//   animation-duration: 2s;
+//   animation-name: slidein; 
+// }
 
-@keyframes anime1 {
-  0% {
-      opacity:  0;  
-      top: 50px; 
-  }
-  100% {
-      opacity:  1;
-      top: 0;
-  }
-}
+// @keyframes anime1 {
+//   0% {
+//       opacity:  0;  
+//       top: 50px; 
+//   }
+//   100% {
+//       opacity:  1;
+//       top: 0;
+//   }
+// }
 
-.header-menus {
-  height: 50px;
-  width: 100%;
-  font-family:'Tahoma';
-  background-color: #faedd4;
-}
+// .header-menus {
+//   height: 50px;
+//   width: 100%;
+//   font-family:'Tahoma';
+//   background-color: #faedd4;
+// }
 
-.menus-clearfix {
-  display: flex;
-  height: 50px;
-  width: 80%;
-  margin: auto;
-}
+// .menus-clearfix {
+//   display: flex;
+//   height: 50px;
+//   width: 80%;
+//   margin: auto;
+// }
 
-a {
-  color: black;
-  text-decoration: none;
-  margin: auto;
-  padding-left: 20px;
-  transform: rotate(360deg);
-  transition: 0.5s;
-}
+// a {
+//   color: black;
+//   text-decoration: none;
+//   margin: auto;
+//   padding-left: 20px;
+//   transform: rotate(360deg);
+//   transition: 0.5s;
+// }
 
-.menu {
-  list-style: none;
-  color: black;
-  text-decoration: none;
-  color: black;
-  padding-top: 15px;
-  padding-left: 40px;
-  width: calc(100% / 5);
-  margin: 0 auto;
-}
+// .menu {
+//   list-style: none;
+//   color: black;
+//   text-decoration: none;
+//   color: black;
+//   padding-top: 15px;
+//   padding-left: 40px;
+//   width: calc(100% / 5);
+//   margin: 0 auto;
+// }
 
-.menu:hover {
-  background: wheat;
-  color: white;
-}
+// .menu:hover {
+//   background: wheat;
+//   color: white;
+// }
 
-.posts-index-item {
-  padding: 20px 30px;
-  background-color: #FFFFF0;
-  overflow: hidden;
-  box-shadow: 0 2px 6px #c1ced7;
-  width: 90vw;
-  margin: auto;
-  margin-top: 10px;
-}
+// .posts-index-item {
+//   padding: 20px 30px;
+//   background-color: #FFFFF0;
+//   overflow: hidden;
+//   box-shadow: 0 2px 6px #c1ced7;
+//   width: 90vw;
+//   margin: auto;
+//   margin-top: 10px;
+// }
 
-.posts-index-item a {
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+// .posts-index-item a {
+//   display: block;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+// }
 
-.posts-index-item:hover {
-  background-color: rgb(252, 248, 213);
-}
+// .posts-index-item:hover {
+//   background-color: rgb(252, 248, 213);
+// }
 
-.post-right {
-  float: left;
-  width: 90%;
-  padding-left: 25px;
-  text-align: left;
-}
+// .post-right {
+//   float: left;
+//   width: 90%;
+//   padding-left: 25px;
+//   text-align: left;
+// }
 
-.posts-show-item {
-  padding: 30px;
-  background-color: white;
-  box-shadow: 0 2px 6px #c1ced7;
-  overflow: hidden;
-}
+// .posts-show-item {
+//   padding: 30px;
+//   background-color: white;
+//   box-shadow: 0 2px 6px #c1ced7;
+//   overflow: hidden;
+// }
 
-.like-btn {
-  color: #8899a6;
-}
+// .like-btn {
+//   color: #8899a6;
+// }
 
-.like-btn-unlike1 {
-  color: red;
-}
+// .like-btn-unlike1 {
+//   color: red;
+// }
 
-.like-btn-unlike2 {
-  color: blue;
-}
+// .like-btn-unlike2 {
+//   color: blue;
+// }
 
-.post-menus {
-  float: right;
-  padding-right: 30px;
-}
+// .post-menus {
+//   float: right;
+//   padding-right: 30px;
+// }
 
-.post-menus a, .post-menus input {
-  color: #8899a6;
-  text-decoration: underline;
-  font-size: 17px;
-  padding-right: 30px;
-}
-
-
-/* posts/new ================================ */
-
-.posts-new {
-  padding-left: 280px;
-  padding-top: 80px;
-}
-
-.form-heading {
-  color: white;
-  font-size: 20px;
-  font-family: 'arial';
-  text-shadow: 1px 2px 3px black; 
-}
-
-.posts-new textarea {
-  padding: 20px;
-  min-height: 150px;
-  min-width: 600px;
-}
-
-.posts-new textarea:focus {
-  border: 2px solid sandybrown;
-  outline: 0;
-}
+// .post-menus a, .post-menus input {
+//   color: #8899a6;
+//   text-decoration: underline;
+//   font-size: 17px;
+//   padding-right: 30px;
+// }
 
 
-input[type="submit"]{
-  margin-left: 20px;
-  border: 3px solid #cbf3cb;
-  border-radius: 30px;
-  width: 100px;
-  height: 40px;
-  transition: 1s;
-}
+// /* posts/new ================================ */
 
-input[type="submit"]:hover{
-  background-color: #9ad69a;
-}
+// .posts-new {
+//   padding-left: 280px;
+//   padding-top: 80px;
+// }
+
+// .form-heading {
+//   color: white;
+//   font-size: 20px;
+//   font-family: 'arial';
+//   text-shadow: 1px 2px 3px black; 
+// }
+
+// .posts-new textarea {
+//   padding: 20px;
+//   min-height: 150px;
+//   min-width: 600px;
+// }
+
+// .posts-new textarea:focus {
+//   border: 2px solid sandybrown;
+//   outline: 0;
+// }
 
 
-.record-content {
-  padding-top: 20px;
-}
+// input[type="submit"]{
+//   margin-left: 20px;
+//   border: 3px solid #cbf3cb;
+//   border-radius: 30px;
+//   width: 100px;
+//   height: 40px;
+//   transition: 1s;
+// }
 
-.post-time {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+// input[type="submit"]:hover{
+//   background-color: #9ad69a;
+// }
 
-.posts-show-item {
-  margin-top: 20px;
-  width: 80vw;
-  margin: 100px auto;
-}
 
-.show-container {
+// .record-content {
+//   padding-top: 20px;
+// }
 
-}
+// .post-time {
+//   padding-top: 20px;
+//   padding-bottom: 20px;
+// }
+
+// .posts-show-item {
+//   margin-top: 20px;
+//   width: 80vw;
+//   margin: 100px auto;
+// }
+
+// .show-container {
+
+// }

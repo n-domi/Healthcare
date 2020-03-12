@@ -1,14 +1,14 @@
 <div class="main users-new">
-  <div class="container">
-    <div class="users-form-heading">ログイン</div>
+  <div class="users-container">
+    <div class="users-form-heading"><i class="fas fa-sign-in-alt" style="margin-right: 16px;"></i>ログイン</div>
     <div class="form users-form">
       <div class="form-body">
-        <%= form_tag("/login") do %>
-          <p class="form-guide">メールアドレス</p>
-          <input name="email" value="<%= @email %>">
-          <p class="form-guide">パスワード</p>
-          <input type="password" name="password" value="<%= @password %>">
-          <input type="submit" value="ログイン">
+        <%= form_tag("/login", {method: :post}) do %>
+          <p class="form-guide">メールアドレス<i class="far fa-envelope" style="margin-left: 16px;"></i></p>
+          <input name="email" value="<%= @email %>" class="user-input">
+          <p class="form-guide">パスワード<i class="fas fa-key" style="margin-left: 16px;"></i></p>
+          <input type="password" name="password" value="<%= @password %>" class="user-input">
+          <br><input type="submit" value="ログイン" class="user-submit submit-btn">
         <% end %>
       </div>
     </div>
