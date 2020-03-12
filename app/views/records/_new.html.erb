@@ -1,8 +1,7 @@
 <section class="new-record">
-  <section class="new-record">
   <div class="form-container">
     <h1 class="form-head"><i class="fas fa-edit"></i>　Edit<b style="margin-left:80px;"><%= @record.created_at.strftime('%Y/%m/%d %H:%M')%> の投稿</b></h1>
-      <%= form_tag("/records/#{params[:id]}", {method: :patch}) do %>
+      <%= form_tag("/records") do %>
         <div class="form">
           <div class="form-body">
             <textarea  type="text" name="content" placeholder="What did you eat?"><%= @record.content %></textarea>
@@ -11,8 +10,4 @@
         </div>
       <% end %>
   </div>
-</section>
-</section>
-<section class="records">
-  <%= render :partial => "index" %>
 </section>

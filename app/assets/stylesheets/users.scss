@@ -2,56 +2,40 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.users-edit {
-  height: calc(100vh - 150px);
-  width: 100vw;
+.users-new {
+  height: 90vh;
+  width: 100%;
+  background-color: rgba(250, 206, 239, 0.36);
 }
 
-.users-form-container {
-  width: 50%;
+.users-container {
+  height: 60%;
+  width: 60%;
   margin: auto;
+  padding: 80px;
+  text-align: center;
 }
 
 .users-form-heading {
-  margin: auto;
-  text-align: center;
-  width: 220px;
-  color: white;
-  font-size: 25px;
-  font-family: 'arial';
-  text-shadow: 1px 2px 3px black; 
-  padding-top: 25px;
+  padding: 40px;
+  font-size: 28px;
 }
 
-.users-form {
-  margin: auto;
-  text-align: center;
-  width: 220px;
+.user-submit {
+  width: 40%;
 }
 
-.users-form-body {
-  margin: auto;
+.user-input {
+  width: 50%;
+  height: 10%;
+  padding: 0px 8px;
 }
 
-input[name="name"],input[name="email"],input[name="password"] {
-  width: 220px;
-  height: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.user-input,.user-submit {
+  height: 4vh;
+  margin: 16px;
 }
 
-.form-guide {
-  font-size: 20px;
-  color: white;
-  text-shadow: 1px 2px 3px black; 
-  padding-top: 20px;
-  font-family: 'arial';
-}
-
-input[value="保存"] {
-  margin-top: 25px;
-}
-
-.session {
-  padding-left: 130px;
+input:focus {
+  outline: 1px deeppink solid;
 }

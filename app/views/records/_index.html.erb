@@ -1,0 +1,55 @@
+<div class="records-inner">
+  <% @records.each do |record| %>
+    <div class="record">
+    <a></a>
+      <div class="record-top">
+        <div class="record-top-left">
+          
+          <%= record.created_at.strftime('%Y/%m/%d %H:%M') %>
+        </div>
+        <div class="record-top-right">
+          <%= link_to("/records/#{record.id}/edit", {method: "get"}) do %>
+            <i class="far fa-edit" style="padding-right: 8px;"></i></a>
+          <% end %>
+          <%= link_to("/records/#{record.id}", {method: "delete"}) do %>
+            <i class="far fa-trash-alt"></i>
+          <% end %>
+          
+        </div>  
+      </div>
+      <div class="record-bottom">
+        <div class="record-bottom-left">
+          食事内容 :　<%= record.content %>
+        </div>
+        <div class="record-bottom-right">
+          <% if Goodfeeling.find_by(user_id: @current_user.id, record_id: record.id) %>
+            <%= link_to("/goodfeelings/#{record.id}/destroy", {method: "post", class: "link"}) do %>
+              <%# <span class="far fa-laugh-beam like-btn-unlike1"><b>feelgood!</b></span> %>
+              <i class="far fa-laugh-beam like-btn-unlike"></i><b>feelgood!</b>
+            <% end %>
+          <% else %>
+            <%= link_to("/goodfeelings/#{record.id}/create", {method: "post", class: "link"}) do %>
+              <%# <span class="far fa-thumbs-up like-btn"><b>feelgood?</b></span> %>
+              <i class="far fa-thumbs-up like-btn"></i><b>feelgood?</b>
+            <% end %>
+          <% end %>
+
+          <% if Badfeeling.find_by(user_id: @current_user.id, record_id: record.id) %>
+            <%= link_to("/badfeelings/#{record.id}/destroy", {method: "post", class: "link"}) do %>
+              <%# <span class="far fa-tired like-btn-unlike"><b>feelbad!</b></span> %>
+              <i class="far fa-tired unlike-btn-unlike" style="padding-left: 8px;"></i><b>feelbad!</b>
+            <% end %>
+          <% else %>
+            <%= link_to("/badfeelings/#{record.id}/create", {method: "post", class: "link"}) do %>
+              <i class="far fa-thumbs-down like-btn" style="padding-left: 8px;"></i><b>feelbad?</b>
+            <% end %>
+          <% end %>
+        </div>
+        
+      </div>
+      
+    </div>
+  <% end %>
+  <%= paginate @records %>
+</div>
+

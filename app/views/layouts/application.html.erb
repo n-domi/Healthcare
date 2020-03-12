@@ -9,43 +9,29 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   </head>
-  <body class="bgimg">
-    <header>
-      <div class="header-logo">
-        <h1 class="title">D a t a　f o r　H e a l t h y　L i f e</h1>
-        <p class="subtitle">〜あなたに合った食事で健康的な生活を〜</p>
-      </div>
-      <ul class="header-menus">
-        <div class="menus-clearfix">
-          <% if @current_user %>
-            <li class="menu">
-              <%= link_to(@current_user.name + "さん", "/users/#{@current_user.id}/edit") %>
-            </li>
-            <li class="menu">
-              <%= link_to("記録する", "/records/new") %>
-            </li>
-            <li class="menu">
-              <%= link_to("記録一覧", "/records/index") %>
-            </li>
-            <li class="menu">
-              <%= link_to("feel good!😄", "/users/#{@current_user.id}/goodfeelings") %>
-            </li>
-            <li class="menu">
-              <%= link_to("feel bad!😨", "/users/#{@current_user.id}/badfeelings") %>
-            </li>
-            <li class="menu">
-              <%= link_to("ログアウト", "/logout", {method: :post}) %>
-            </li>
-          <% else %>
-            <li class="menu session">
-              <%= link_to("新規登録", "/signup") %>
-            </li>
-            <li class="menu session">
-              <%= link_to("ログイン", "/login") %>
-            </li class="menu">
-          <% end %>
-        </ul>
-    </header>
-    <%= yield %>
+  <body>
+    <div class="wrapper">
+      <%= render :partial => "modules/side-bar" %>
+      <div class='main'>
+        <%= render :partial => "modules/header" %>
+      
+    </div>
+  <script>  
+  document.getElementById("date").innerHTML = getNow();
+
+  function getNow() {
+    var now = new Date();
+    // var year = now.getFullYear();
+    var mon = now.getMonth()+1; //１を足すこと
+    var day = now.getDate();
+    // var hour = now.getHours();
+    // var min = now.getMinutes();
+    // var sec = now.getSeconds();
+
+    //出力用
+    var s = mon + "月" + day + "日"; 
+    return s;
+  }
+  </script>  
   </body>
 </html>
