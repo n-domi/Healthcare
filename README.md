@@ -1,4 +1,5 @@
-![5543452c7a82d7b5cacf46224d8cf4f0](https://user-images.githubusercontent.com/59164751/76047940-a1fb4e80-5fa7-11ea-8bed-99e7399fdaca.jpg)
+<img width="1439" alt="377df602ece49a598048577bf79db8f8" src="https://user-images.githubusercontent.com/59164751/76491026-f606a700-646f-11ea-8f4c-28a1704a36c4.png">
+
 
 
 Link→  https://rocky-depths-03246.herokuapp.com/
@@ -31,7 +32,7 @@ Healthcare
 
 # Demo
 
-![d43beafd026d426b0f51f5e83a10df7a](https://user-images.githubusercontent.com/59164751/76049110-63669380-5fa9-11ea-9c72-b2c408aa1947.gif)
+![0c60e76fe3005c7e77cab6b9b5bc2663](https://user-images.githubusercontent.com/59164751/76491057-0f0f5800-6470-11ea-9a01-c6c02b2dab8e.gif)
 
 テストアカウント=>email:1@1,password:11111111
 
